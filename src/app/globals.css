@@ -2,3 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+.star {
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 58px solid white;
+}
+
+.star::before {
+  position: absolute;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 58px solid white;
+  content: "";
+  left: -80px;
+  transform: rotate(70DEG);
+}
+
+.star::after {
+  position: absolute;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 58px solid white;
+  content: "";
+  left: -80px;
+  transform: rotate(290DEG);
+}
